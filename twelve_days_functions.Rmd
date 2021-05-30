@@ -53,6 +53,16 @@ return(gift)
 
 ```
 
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 10px;}
+</style>
+<div class = "blue">
+  
+**4** -- Nice use of `case_when()`!
+
+</div>
+
+
 ### Test Your Function
 
 ```{r}
@@ -62,6 +72,15 @@ pluralize_gift(xmas$Gift.Item)
 purrr::map_chr(xmas$Gift.Item, pluralize_gift)
 
 ```
+
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 10px;}
+</style>
+<div class = "blue">
+  
+**4** -- Does your function need `map_chr()` to handle vector inputs?
+
+</div>
 
 ---
 
@@ -102,6 +121,16 @@ make_phrase <- function(num, num_word, item, verb, adjective, location) {
 }
 ```
 
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 10px;}
+</style>
+<div class = "blue">
+  
+**4** -- Nice use of `str_squish()`!
+
+</div>
+
+
 # Test Your Function
 
 ```{r}
@@ -112,6 +141,16 @@ xmas <- xmas %>%
   )
 
 ```
+
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 10px;}
+</style>
+<div class = "blue">
+  
+**4** -- Great!
+
+</div>
+
 
 ---
 
@@ -145,6 +184,16 @@ sing_line <- function(dataset, line, phrase_col){
 
 ```
 
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 10px;}
+</style>
+<div class = "blue">
+  
+**4** -- Why use `paste()` and not `glue()`???
+
+</div>
+
+
 Source (rev): <https://stat.ethz.ch/R-manual/R-patched/library/base/html/rev.html>
 
 Source (paste): <https://www.journaldev.com/40396/paste-in-r#:~:text=Output%20%3D%20%E2%80%9C1%26two%263%26four%265%26six%E2%80%9D-,The%20paste()%20function%20with%20collapse%20argument,the%20elements%20in%20the%20vector.>
@@ -156,6 +205,16 @@ sing_line(xmas,
           line = 5, 
           phrase_col = Full.Phrase)
 ```
+
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 10px;}
+</style>
+<div class = "blue">
+  
+**4** -- Beautiful!
+
+</div>
+
 
 ---
 
@@ -180,3 +239,12 @@ map_chr(1:12, ~sing_line(xmas2, .x, Full.Phrase)) %>%
   cat()
 
 ```
+
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 10px;}
+</style>
+<div class = "blue">
+  
+**4** -- Awesome output!
+
+</div>
