@@ -15,7 +15,7 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 10px;}
 
 Nice work! You have no revisions! 
   
-**Score** (out of 7 questions):  
+**Score** (out of 7 questions): 4
 
 </div>
 
